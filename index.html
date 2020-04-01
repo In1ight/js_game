@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Игра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+    <div class="screen screenStart">
+        <div class="formStart">
+            <h4>Добро пожаловать в нашу игру ;)</h4>
+            <h5>Вводи свое имя в поле ниже и давай начинать!</h5>
+            <input type="text" class="inputName">
+            <button class="btn btnStart" disabled>Начать игру</button>
+        </div>
+    </div>
+    <div class="screen screenGame d-none">
+        <div class="point pointTime"><span id="time"></span></div>
+        <div class="point pointHp">100HP</div>
+        <div class="point pointMp">100MP</div>
+        <div class="point pointName"></div>
+
+        <div id="player"></div>
+        <div class="hyena"></div>
+    </div>
+    <div class="screen screenTotal d-none">
+        <div class="formStart">
+            <h4>Мы должны их одолеть! Пробуй еще!</h4>
+            <h5 id="totalName"></h5>
+            <div class="result"></div>
+            <button class="btn btnEnd">Играть сначала</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
